@@ -9,5 +9,5 @@ BOT_TOKEN = getenv("BOT_TOKEN", "7442602363:AAFnHnlOkUctvxRyEe4rNW_MjNMmlwQrnL0"
 OWNER_ID = list(map(int, getenv("OWNER_ID", "772384743").split()))
 MONGO_DB = getenv("MONGO_DB", "mongodb+srv://BinaryBandiT69:BinaryBandiT69@db3.vxnexhs.mongodb.net/?retryWrites=true&w=majority&appName=DB3")
 LOG_GROUP = getenv("LOG_GROUP", "-1002164324803")
-CHANNEL_ID = int(getenv("CHANNEL_ID", "TBots_Father"))
+CHANNEL_ID = int(getenv("CHANNEL_ID", "-1002119612742"))
 
