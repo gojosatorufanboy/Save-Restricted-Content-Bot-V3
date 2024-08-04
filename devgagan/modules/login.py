@@ -29,7 +29,8 @@ async def generate_session(_, message):
     joined = await subscribe(_, message)
     if joined == 1:
         return
-           
+         
+    user_id = message.chat.id   
     
     number = await _.ask(user_id, 'Please enter your phone number along with the country code. \nExample: +19876543210', filters=filters.text)   
     phone_number = number.text
