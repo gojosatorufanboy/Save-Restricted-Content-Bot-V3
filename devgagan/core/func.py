@@ -89,7 +89,7 @@ PROGRESS_BAR = """\n
 **__Bytes__** : {0}%
 **__Speed__** : {3}/s
 **__Time__** : {4}\n\n
-**__Powered by [TBots_Father](https://t.me/BinaryBandiT69)__**
+**__Powered by [TBots_Father](https://t.me/TBots_Father)__**
 """
 
 

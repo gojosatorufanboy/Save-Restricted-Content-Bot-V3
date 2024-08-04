@@ -133,3 +133,41 @@ async def stop_batch(_, message):
     else:
         await app.send_message(message.chat.id, "No active batch processing to stop.")
 
+
+
+HELP_TXT = """
+HELP SECTION 📝
+
+🛠️ /settings - Open settings to set your requirements.
+
+🔒 /login - Login to your userbot session.
+
+📦 /batch - Download bulk links in a systematic way.
+
+⛔ /cancel - Stop batch processing.
+
+FOR PUBLIC AND PRIVATE CHANNEL OR GROUP:
+- First, log in.
+- Then send the message link of any channel that you've joined in your login account.
+
+FOR BOT:
+- Send the link in this format: https://t.me/b/bot_username/message_id (use Plus Messenger for message_id)
+
+FOR GROUP TOPIC:
+- (For Private Group) Group topic link is like: https://t.me/c/xxxxxxxxx/first_id/second_id
+But, send it like this: https://t.me/c/xxxxxxx/second_id (remove first id and one /)
+- (For Public Group) Follow the private link step but remove "/c" from the link. Ex - https://t.me/username/second_id
+
+#FAQ:
+
+- If the bot says "Have you joined the channel?" then just log in again to the bot and try.
+
+- If your batch is stuck, then use /stop.
+
+"""
+
+
+@app.on_message(filters.command("help"))
+async def help_command(event):
+    await event.respond(HELP_TXT)
+    
