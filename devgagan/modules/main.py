@@ -58,10 +58,7 @@ users_loop = {}
 
 @app.on_message(filters.command("batch"))
 async def batch_link(_, message):
-    user_id = message.chat.id    
-    lol = await chk_user(message, user_id)
-    if lol == 1:
-        return    
+    user_id = message.chat.id       
         
     start = await app.ask(message.chat.id, text="Please send the start link.")
     start_id = start.text
