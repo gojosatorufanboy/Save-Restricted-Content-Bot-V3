@@ -62,7 +62,4 @@ Ex: https://t.me/c/username/first_id/second_id Will Be https://t.me/username/sec
 
 @app.on(events.NewMessage(pattern='/help'))
 async def help_command(event):
-    buttons = [
-        [Button.inline("Login", b'addsession')]
-        ]
     await event.respond(HELP_TEXT, buttons=buttons, link_preview=False)
