@@ -29,10 +29,6 @@ async def generate_session(_, message):
     joined = await subscribe(_, message)
     if joined == 1:
         return
-         
-    user_checked = await chk_user(message, message.from_user.id)
-    if user_checked == 1:
-        return
 
     user_id = message.chat.id   
     
