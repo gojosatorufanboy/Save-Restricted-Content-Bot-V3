@@ -60,6 +60,6 @@ Ex: https://t.me/c/username/first_id/second_id Will Be https://t.me/username/sec
 """ 
 
 
-@app.on(events.NewMessage(pattern='/help'))
+@app.on_message(filters.command("help"))
 async def help_command(event):
     await event.respond(HELP_TEXT, buttons=buttons, link_preview=False)
