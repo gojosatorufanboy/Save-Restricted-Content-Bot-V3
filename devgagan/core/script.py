@@ -3,7 +3,14 @@
 # ------------------------------------------------------------ #
 
 START_TXT = """
-Hey There!, Welcome to Restricted Content Saver Bot, \n\nDesigned to save restricted messages from Public/Private Channels & Groups. \n\nFirst login to the bot by using /login command then send post link.
+Hey There!, Welcome to Restricted Content Saver Bot, \nDesigned to Save Restricted Messages from Public/Private Channels & Groups. \n\nFirst login to the bot by using /login command then send post link. \n\nAvailable Commands:\n
+🛠️ /settings - Open settings to set your requirements.
+
+🔒 /login - Login to your userbot session.
+
+📦 /batch - Download bulk links in a systematic way.
+
+⛔ /cancel - Stop batch processing.
 """
 
 FORCE_MSG = """
